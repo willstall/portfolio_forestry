@@ -2,7 +2,6 @@ baseURL = ""
 languageCode = "en-us"
 title = "Basic Demo Site"
 
-sectionPagesMenu = "main"
 
 themesDir = "themes"
 theme = "lovely"
@@ -25,15 +24,16 @@ theme = "lovely"
   name = 'keywords'
   weight = 90
 
-  
-# [menu]
-#   [[menu.main]]
-#     name = "Home"
-#     pre = "home"
-#     url = "/"
-#     weight = 1
-#   [[menu.main]]
-#     name = "Posts"
-#     pre = "pen-tool"
-#     url = "/posts/"
-#     weight = 2
+
+# sectionPagesMenu = "main"
+[menu]
+  [[menu.main]]
+    name = "Projects"
+    pre = "pen-tool"
+    url = "/projects"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    pre = "pen-tool"
+    url = "/about/"
+    weight = 2

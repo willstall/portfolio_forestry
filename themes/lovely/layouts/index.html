@@ -4,4 +4,8 @@
 </div>
 
 {{ .Content }}
+
+{{ range first 10 .Pages }}
+<article>{{ .Summary }}</article>
+{{ end }}
 {{ end }}
