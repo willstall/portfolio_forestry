@@ -1,4 +1,18 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ .Content }}
+
+{{ $related := site.RegularPages.RelatedIndices . "project" "date" }}
+{{ $project := .Params.project  }}
+{{ $relatedName := humanize $project  }}
+
+{{ with $related }}
+<h3>More {{ $relatedName }}</h3>
+<ul>
+	{{ range . }}
+	{{ if ne (lower .Title) $project }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
+    {{ end }}
+</ul>
+{{ end }}
+
 {{ end }}

@@ -7,7 +7,25 @@ sectionPagesMenu = "main"
 themesDir = "themes"
 theme = "lovely"
 
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+[[related.indices]]
+  name = "project"
+  weight = 100
+  includeNewer = true
+[[related.indices]]
+  name = 'date'
+  weight = 10
+[[related.indices]]
+  name = 'tags'
+  weight = 20  
+[[related.indices]]
+  name = 'keywords'
+  weight = 90
 
+  
 # [menu]
 #   [[menu.main]]
 #     name = "Home"

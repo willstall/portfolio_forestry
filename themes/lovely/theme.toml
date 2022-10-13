@@ -19,3 +19,12 @@ min_version = "0.41"
   name = ""
   homepage = ""
   repo = ""
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+[[related.indices]]
+  name = "project"
+  weight = 100
+  includeNewer = true
