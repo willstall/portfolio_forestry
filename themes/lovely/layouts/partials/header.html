@@ -4,7 +4,7 @@
         <a class="navbar-brand" href="/">WILLSTALL</a>     
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
-            <ul class="navbar-nav me-end">
+            <ul class="nav nav-pills me-end">
                 {{ range .Site.Menus.main }}
                 <li class="nav-item"><a class="nav-link {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}" href="{{ .URL }}">{{ $text := print .Name | safeHTML }}{{ $text }}</a></li>
                 {{ end }}
