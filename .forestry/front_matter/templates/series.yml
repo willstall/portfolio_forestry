@@ -1,4 +1,11 @@
 ---
 label: Series
 hide_body: false
-fields: []
+fields:
+- name: pieces
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Pieces
