@@ -9,3 +9,5 @@ fields:
     min: 
     max: 
   label: Pieces
+pages:
+- content/shaders/Journey/index.md
