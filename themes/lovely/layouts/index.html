@@ -5,7 +5,6 @@
 
 {{ .Content }}
 
-{{ range first 10 .Pages }}
-<article>{{ .Summary }}</article>
-{{ end }}
+{{ (.Site.GetPage "about").Summary }}
+
 {{ end }}
