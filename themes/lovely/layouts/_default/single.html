@@ -2,10 +2,10 @@
 <h1>{{ .Title }}</h1>
 {{ partial "breadcrumb.html" . }}
 {{ .Content }}
-
 {{ $related := site.RegularPages.RelatedIndices . "project" "date" }}
 {{ $project := .Params.project  }}
 
+<!-- Show related pages listed with the same project -->
 {{ with $related }}
 <h3>More <a href="/projects/{{ lower $project }}">{{ humanize $project }}</a></h3>
 <ul>
@@ -14,5 +14,4 @@
     {{ end }}
 </ul>
 {{ end }}
-
 {{ end }}
