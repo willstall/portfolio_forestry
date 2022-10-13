@@ -2,10 +2,12 @@
 <html>
     {{- partial "head.html" . -}}
     <body>
+        <div class="container-xl p-4">
         {{- partial "header.html" . -}}
         <div id="content">
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
+        </div>
     </body>
 </html>
