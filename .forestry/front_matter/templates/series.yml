@@ -10,4 +10,4 @@ fields:
     max: 
   label: Pieces
 pages:
-- content/shaders/Journey/index.md
+- content/shaders/Journey/_index.md
