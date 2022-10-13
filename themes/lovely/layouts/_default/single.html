@@ -1,7 +1,9 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ partial "breadcrumb.html" . }}
+<div class="container">
 {{ .Content }}
+</div>
 {{ $related := site.RegularPages.RelatedIndices . "project" "date" }}
 {{ $project := .Params.project  }}
 
