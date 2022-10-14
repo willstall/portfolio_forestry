@@ -7,6 +7,9 @@ title = "Basic Demo Site"
 themesDir = "themes"
 theme = "lovely"
 
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
+
 [related]
   includeNewer = true
   threshold = 80
